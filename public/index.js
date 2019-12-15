@@ -26,7 +26,7 @@ let productos = [];
 // }
 
 // obtenerYdibujarProductos();
-
+console.log("cambio");
 async function obtenerYdibujarProductos() {
   let response = await fetch("/productos");
 

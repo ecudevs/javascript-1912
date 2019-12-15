@@ -52,7 +52,7 @@ app.get("/productos/:idProducto", (req, res) => {
 app.post("/productos", (req, res) => {
   console.log(req.body);
   productos.push(req.body);
-  res.send({ mensaje: "Producto agregado!" });
+  res.send({ mensaje: "Producto agregado!!" });
 });
 
 app.put("/productos", (req, res) => {
