@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="http://ecudevs.com">JavaScript</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#">Producto</a>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#formularioProducto"
+          >
+            Agregar
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row" id="productos"></div>
+    </div>
+
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="formularioProducto"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nuevo producto</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- action="https://www.google.com/search" -->
+            <form onsubmit="_submit(event)">
+              <div class="form-group">
+                <label for="producto">Nombre del producto</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="producto"
+                  name="producto"
+                  aria-describedby="productoAyuda"
+                  placeholder="Escribe el nombre del producto"
+                  maxlength="100"
+                />
+                <small id="productoAyuda" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="imagen">Url de imagen</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="imagen"
+                  name="imagen"
+                  placeholder="Ingresa la url de la imagen del producto"
+                />
+              </div>
+              <div class="form-group">
+                <label for="precio">Precio</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="precio"
+                  name="precio"
+                  placeholder="Ingresa el precio del producto"
+                />
+              </div>
+              <div class="form-group">
+                <label for="descripcion">Descripcion</label>
+                <textarea
+                  class="form-control"
+                  id="descripcion"
+                  name="descripcion"
+                  rows="2"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Guardar
+              </button>
+              <button type="reset" class="btn btn-danger">
+                Borrar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

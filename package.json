@@ -1,0 +1,23 @@
+{
+  "name": "javascript1912",
+  "version": "1.0.0",
+  "description": "Proyecto Javascript Diciembre 2019",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "javascript",
+    "bootstrap"
+  ],
+  "author": "Thian",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1"
+  }
+}
