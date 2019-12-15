@@ -72,7 +72,7 @@ app.delete("/productos/:idProducto", (req, res) => {
 
   productos.splice(index, 1);
 
-  res.send({ mensaje: "Producto eliminado" });
+  res.send({ mensaje: "Producto eliminado!" });
 });
 
 app.get("*", (req, res) => {
