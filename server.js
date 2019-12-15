@@ -27,6 +27,14 @@ let productos = [
     nombre: "Laptop",
     precio: 2900,
     descripcion: "Pequena descripcion"
+  },
+  {
+    id: 4,
+    imagen:
+      "https://http2.mlstatic.com/samsung-smart-tv-58-4k-2-anos-garantia-samsung-gratis-soport-D_NQ_NP_746315-MEC31021036108_062019-Q.jpg",
+    nombre: "tv SOny",
+    precio: 2000,
+    descripcion: "Pequena descripcion"
   }
 ];
 
